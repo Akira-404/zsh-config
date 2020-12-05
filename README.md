@@ -6,9 +6,7 @@
 - ***git clone [https://github.com/omega-Lee/zsh-config.git](https://github.com/omega-Lee/zsh-config.git)*****  
 
 **直接覆盖（软链接）：**  
-
-- ***cd zsh-config/*****  
-- ***ln -s -f .zshrc ~/.zshrc***  
+- ***ln -s -f ~/zsh-config/.zshrc ~/.zshrc***  
 
 **自己根据配置文件参考修改：**
 
