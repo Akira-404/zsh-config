@@ -12,9 +12,9 @@ export ZSH="/home/omega_lee/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 #Good Theme
-#ZSH_THEME="muse"
+ZSH_THEME="muse"
 #ZSH_THEME="arrow"
-ZSH_THEME="amuse"
+#ZSH_THEME="amuse"
 #ZSH_THEME="awesomepanda"
 #ZSH_THEME="gozilla"
 #ZSH_THEME="half-life"
