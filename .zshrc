@@ -10,10 +10,24 @@ export ZSH="/home/omega_lee/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+#ZSH_THEME="af-magic"
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="xiong-chiamiov-plus"
 #ZSH_THEME="bira"
-ZSH_THEME="ys"
+#ZSH_THEME="ys"
+#ZSH_THEME="agnoster"
+#ZSH_THEME="amuse"
+#ZSH_THEME="arrow"
+ZSH_THEME="awesomepanda"
+#ZSH_THEME="gozilla"
+#ZSH_THEME="half-life"
+#ZSH_THEME="itchy"
+#ZSH_THEME="juanghurtado"
+#ZSH_THEME="miloshadzic"
+#ZSH_THEME="muse"
+#ZSH_THEME="refined"
+#ZSH_THEME="zhann"
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -129,5 +143,7 @@ alias bk="cd .."
 alias tkill="tmux kill-session"
 alias tls="tmux ls"
 
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
