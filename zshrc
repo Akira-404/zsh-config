@@ -134,11 +134,34 @@ alias S="source"
 alias sql3="sqlite3"
 alias cs="cowsay"
 alias bk="cd .."
-#alias tmux="TERM=screen-256color-bce tmux"
-alias tkill="tmux kill-session"
-alias tls="tmux ls"
 
-export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin
+#alias tmux="TERM=screen-256color-bce tmux"
+
+#new session
+alias tns="tmux new -s"
+
+#接入会话
+alias ta="tmux attach -t"
+
+#杀死会话 
+alias tk="tmux kill-session -t"
+
+#会话列表
+alias tl="tmux ls"
+
+#切换会话
+alias tsn="tmux switch -t"
+
+# rename
+alias trs="tmux rename-session -t"
+
+#新建窗口
+alias tnw="tmux new-window -n"
+
+#切换窗口
+alias tsw="tmux select-window -t"
+
+#重命名窗口
+alias trw="tmux rename-window"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
