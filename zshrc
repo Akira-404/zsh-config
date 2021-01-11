@@ -152,7 +152,7 @@ alias tl="tmux ls"
 #切换会话
 alias tsn="tmux switch -t"
 
-# rename
+# rename session
 alias trs="tmux rename-session -t"
 
 #新建窗口
