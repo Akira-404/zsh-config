@@ -4,7 +4,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/astro/.oh-my-zsh"
+export ZSH="/home/ubuntu/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -120,7 +120,7 @@ alias lg="lazygit"
 alias rg="ranger"
 alias nf="neofetch"
 
-alias gh="cd /home/astro/"
+alias gh="cd /home/lu/"
 alias gr="cd /"
 
 alias gc="cd /mnt/c"
