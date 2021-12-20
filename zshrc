@@ -4,7 +4,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ubuntu/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -83,8 +83,8 @@ ZSH_THEME="muse"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	zsh-syntax-highlighting #正确语法高亮 
-	zsh-autosuggestions		#命令提示
+	zsh-syntax-highlighting #正确语法高亮
+	zsh-autosuggestions	#命令提示
 )
 
 
@@ -120,20 +120,7 @@ alias lg="lazygit"
 alias rg="ranger"
 alias nf="neofetch"
 
-alias gh="cd /home/lu/"
-alias gr="cd /"
-
-alias gc="cd /mnt/c"
-alias gd="cd /mnt/d/"
-alias ge="cd /mnt/e/"
-
-alias update="sudo apt-get update"
-alias install="sudo apt-get install"
-alias c="clear"
-alias S="source"
-alias sql3="sqlite3"
-alias cs="cowsay"
-alias bk="cd .."
+alias gh="cd "
 
 #alias tmux="TERM=screen-256color-bce tmux"
 
@@ -143,7 +130,7 @@ alias tns="tmux new -s"
 #接入会话
 alias ta="tmux attach -t"
 
-#杀死会话 
+#杀死会话
 alias tk="tmux kill-session -t"
 
 #会话列表
@@ -154,7 +141,6 @@ alias tsn="tmux switch -t"
 
 # rename session
 alias trs="tmux rename-session -t"
-
 #新建窗口
 alias tnw="tmux new-window -n"
 
@@ -164,4 +150,43 @@ alias tsw="tmux select-window -t"
 #重命名窗口
 alias trw="tmux rename-window"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export CUDA_HOME=/usr/local/cuda-11.2
+export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
+export PATH=${CUDA_HOME}/bin:${PATH}
+
+export PATH=$HOME/anaconda3/bin:$PATH
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('$HOME/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="$HOME/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+#<<< filezilla <<<
+export PATH=$HOME/FileZilla/bin:$PATH
+alias fz="filezilla"
+#<<< filezilla <<<
+
+#<<< postman <<<
+export PATH=$HOME/Postman/app:$PATH
+alias pm="postman"
+#<<< pos <<<
+
+
+[[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
+
+
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
+export LD_LIBRARY_PATH=$HOME/TensorRT8-package/TensorRT-8.2.0.6/lib:$LD_LIBRARY_PATH
+export LIBRARY_PATH=$HOME/TensorRT8-package/TensorRT-8.2.0.6/lib::$LIBRARY_PATH
