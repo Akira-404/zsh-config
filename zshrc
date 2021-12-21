@@ -116,12 +116,13 @@ force_color_prompt=yes
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias lg="lazygit"
 alias rg="ranger"
 alias nf="neofetch"
-
 alias gh="cd "
 
+#<<< tmux <<<
 #alias tmux="TERM=screen-256color-bce tmux"
 
 #new session
@@ -149,12 +150,14 @@ alias tsw="tmux select-window -t"
 
 #重命名窗口
 alias trw="tmux rename-window"
+#<<< tmux <<<
 
+#<<< cuda-11 <<<
 export CUDA_HOME=/usr/local/cuda-11.2
 export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
 export PATH=${CUDA_HOME}/bin:${PATH}
+#<<< cuda-11 <<<
 
-export PATH=$HOME/anaconda3/bin:$PATH
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -181,12 +184,18 @@ export PATH=$HOME/Postman/app:$PATH
 alias pm="postman"
 #<<< pos <<<
 
-
+#<<< xmake <<<
 [[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
-
+#<<< xmake <<<
 
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 
+#<<< TensorRT-8 <<<
 export LD_LIBRARY_PATH=$HOME/TensorRT8-package/TensorRT-8.2.0.6/lib:$LD_LIBRARY_PATH
 export LIBRARY_PATH=$HOME/TensorRT8-package/TensorRT-8.2.0.6/lib::$LIBRARY_PATH
+#<<< TensorRT-8 <<<
+
+#<<< ffmpeg <<<
+export PATH="/opt/ffmpeg_4.4/bin:$PATH"
+#<<< ffmpeg <<<
